@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-my_array = ["Adina", "Mihnea"]
+my_array = ["Adina Mew Mew", "Mihnea"]
 
 @app.route('/')
 def home():
