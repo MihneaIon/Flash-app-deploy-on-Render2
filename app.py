@@ -2,7 +2,11 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-my_array = ["Mihnea", "Adina"]
+my_array = ["Adina", "Mihnea"]
+
+@app.route('/')
+def home():
+    return "App 1 (frontend) is running."
 
 @app.route('/data')
 def get_data():
